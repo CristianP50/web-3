@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-PVWMD4H');</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Optics</title>
@@ -22,6 +31,7 @@
     ================================================== -->
 <link rel="stylesheet" type="text/css"  href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link rel="stylesheet" type="text/css" href="css/styleModal.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
@@ -34,6 +44,28 @@
     <![endif]-->
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVWMD4H" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a class="logo-whatsapp" href="https://api.whatsapp.com/send?phone=16193564358" target="About">
+  <img class="img-logo" src="img/whatsapplogo.png" alt="whatsapp">
+</a>
+
+<div class="modal" id="modal">
+  <div class="contenedor">
+    <div class="modal-header" >¡Consulta gratis!</div>
+    <label for="btn-modal" id="exit">X</label>
+    <div class="contenido">
+      <img src="img/whatsapp3.jpeg" alt="whatsapp" class="img-modal">
+      <a href="https://api.whatsapp.com/send?phone=16193564358" target="About"><button class="btn-whatsapp"
+          type="button">Escríbenos</button></a>
+    </div>
+  </div>
+</div>
+
+
 <!-- Navigation
     ==========================================-->
 <nav id="menu" class="navbar navbar-default navbar-fixed-top">
@@ -49,7 +81,6 @@
         <li><a href="#home" class="page-scroll">Inicio</a></li>
         <li><a href="#about-section" class="page-scroll">Nosotros</a></li>
         <li><a href="#works-section" class="page-scroll">Servicios</a></li>
-        <li><a href="#team-section" class="page-scroll">Team</a></li>
         <li><a href="#contact-section" class="page-scroll">Contact</a></li>
       </ul>
     </div>
@@ -67,71 +98,56 @@
 <!-- About Section -->
 <div id="about-section">
   <div class="container">
-    <div class="section-title">
-      <h2>About Us</h2>
-      <hr>
-    </div>
     <div class="space"></div>
     <div class="row">
-      <div class="col-md-4">
-        <h4>Who We Are</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh ante facilisis bibendum.</p>
+      <div class="col-md-6">
+          <img src="img/pareja.jpg" width="100%"  alt="">
       </div>
-      <div class="col-md-4">
-        <h4>What We Do</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh ante facilisis bibendum.</p>
-      </div>
-      <div class="col-md-4">
-        <h4>Why Choose Us</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh ante facilisis bibendum.</p>
+
+      <div class="col-md-6">
+        <h4 style="font-size: 80px;">Nosotros</h4>
+        <p>Con algunos hechizos de amor, orientados en la magia blanca se transmitirá la mejor energía para
+           conquistar el verdadero amor y que este florezca, aumente la atracción y el poder hacia tu pareja 
+           y se solucionen los problemas, evitando distancias, bloqueando malas energías y así alcanzar la 
+           felicidad.</p>
       </div>
     </div>
   </div>
 </div>
 <!-- Services Section -->
-<div id="services-section">
+<div id="services-section" style="background: rgb(49, 49, 47);">
   <div class="container">
     <div class="section-title">
-      <h2>Our Services</h2>
+      <h2 style="font-size: 25px;">¿Te identificas con alguno de estos problemas?</h2>
       <hr>
     </div>
     <div class="space"></div>
     <div class="row">
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-desktop"></i>
-        <h4>Web design</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+      <div class="col-md-3 col-sm-6 service"> <img src="img/p1.jpg" width="250px" height="200px" alt="p1">
+        <h4>Celos.............</h4>
+        <p>Los celos son una respuesta o una ruptura del equilibrio emocional que surge cuando una persona
+           percibe la amenaza o siente la posibilidad de perdida</p>
       </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-gears"></i>
-        <h4>App Development</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
+
+      <div class="col-md-3 col-sm-6 service"> <img src="img/p2.jpg" width="250px" height="200px" alt="">
+        <h4>Sexualidad.............</h4>
+        <p>Los problemas sexuales o disfunciones sexuales hacen referencia a distintas patologías o 
+          circunstancias que no permiten las relaciones sexuales placenteras</p>
       </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-pie-chart"></i>
-        <h4>Analystics</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+
+      <div class="col-md-3 col-sm-6 service"> <img src="img/p3.jpg" width="250px" height="200px" alt="">
+        <h4>Falta de tiempo juntos</h4>
+        <p>Ayudamos a renacer tu relación. Muchas veces por la falta de tiempo y la costumbre, se presentan 
+          situaciones que pueden afectar el correcto desarrollo de la relación de pareja</p>
       </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-line-chart"></i>
-        <h4>Marketing</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+
+      <div class="col-md-3 col-sm-6 service"> <img src="img/p4.jpg" width="250px" height="200px" alt="">
+        <h4>Culpabilidad.............</h4>
+        <p>Nosotros no soportamos el dolor de no estar con la persona con la que tenemos proyecciones de vida, 
+          no duermes, lloras, pides consejos, ruegas y no acepta ¡Te ayudaremos!</p>
       </div>
+      
     </div>
-    <div class="space"></div>
-    <div class="row">
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-shopping-cart"></i>
-        <h4>eCommerce</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-file-text-o"></i>
-        <h4>Content Development</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-rocket"></i>
-        <h4>Branding</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-camera"></i>
-        <h4>Video & Photography</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
-      </div>
     </div>
   </div>
 </div>
@@ -148,9 +164,6 @@
         <li>
           <ol class="type">
             <li><a href="#" data-filter="*" class="active">All</a></li>
-            <li><a href="#" data-filter=".web">Web Design</a></li>
-            <li><a href="#" data-filter=".app">App Development</a></li>
-            <li><a href="#" data-filter=".branding">Branding</a></li>
           </ol>
         </li>
       </ul>
@@ -158,143 +171,97 @@
     </div>
     <div class="row">
       <div class="portfolio-items">
+
         <div class="col-sm-6 col-md-3 col-lg-3 web">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/01.jpg" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/e1.jpg" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Web Design</small>
+                <h4>AMARRES Y ENDULZAMIENTOS DE AMOR</h4>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/portfolio/01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/e1.jpg" class="img-responsive" alt="AMARRES Y ENDULZAMIENTOS DE AMOR"></a>
+            </div>
+            <p>Nosotros no soportamos el dolor de no estar con la persona con la que tenemos proyecciones de vida, 
+            no duermes, lloras, pides consejos, ruegas y no acepta ¡Te ayudaremos!</p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/02.jpg" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>App Development</small>
-                <div class="clearfix"></div>
-              </div>
-              <img src="img/portfolio/02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
+
         <div class="col-sm-6 col-md-3 col-lg-3 web">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/03.jpg" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/e2.jpg" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Web Design</small>
+                <h4>ATRACCIONES SEXUALES</h4>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/portfolio/03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/e2.jpg" class="img-responsive" alt="ATRACCIONES SEXUALES"></a>
+            </div>
+            <p>Nosotros no soportamos el dolor de no estar con la persona con la que tenemos
+               proyecciones de vida, no duermes, lloras, pides consejos, ruegas y no acepta ¡Te ayudaremos!</p>
           </div>
         </div>
+
         <div class="col-sm-6 col-md-3 col-lg-3 web">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/04.jpg" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/amarres8.jpg" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Web Design</small>
+                <h4>AMARRES Y ENDULZAMIENTOS DE AMOR</h4>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/portfolio/04.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/amarres8.jpg" class="img-responsive" alt="AMARRES Y ENDULZAMIENTOS DE AMOR"></a>
+            </div>
+            <p>Nosotros no soportamos el dolor de no estar con la persona con la que tenemos proyecciones de vida, 
+            no duermes, lloras, pides consejos, ruegas y no acepta ¡Te ayudaremos!</p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/05.jpg" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>App Development</small>
-                <div class="clearfix"></div>
-              </div>
-              <img src="img/portfolio/05.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 branding">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/06.jpg" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Branding</small>
-                <div class="clearfix"></div>
-              </div>
-              <img src="img/portfolio/06.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 branding app">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/07.jpg" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>App Development, Branding</small>
-                <div class="clearfix"></div>
-              </div>
-              <img src="img/portfolio/07.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
+
         <div class="col-sm-6 col-md-3 col-lg-3 web">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/08.jpg" rel="prettyPhoto">
+            <div class="hover-bg"> <a href="img/amarres8.jpg" rel="prettyPhoto">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <small>Web Design</small>
+                <h4>AMARRES Y ENDULZAMIENTOS DE AMOR</h4>
                 <div class="clearfix"></div>
               </div>
-              <img src="img/portfolio/08.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/amarres8.jpg" class="img-responsive" alt="AMARRES Y ENDULZAMIENTOS DE AMOR"></a>
+            </div>
+            <p>Nosotros no soportamos el dolor de no estar con la persona con la que tenemos proyecciones de vida, 
+            no duermes, lloras, pides consejos, ruegas y no acepta ¡Te ayudaremos!</p>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Team Section -->
-<div id="team-section">
-  <div class="container">
-    <div class="section-title">
-      <h2>Meet the Team</h2>
-      <hr>
-    </div>
-    <div id="row">
-      <div class="col-md-3 col-sm-6 team">
-        <div class="thumbnail"> <img src="img/team/01.jpg" alt="..." class="team-img">
-          <div class="caption">
-            <h3>John Doe</h3>
-            <p>Founder</p>
+
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/amarres8.jpg" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>AMARRES Y ENDULZAMIENTOS DE AMOR</h4>
+                <div class="clearfix"></div>
+              </div>
+              <img src="img/amarres8.jpg" class="img-responsive" alt="AMARRES Y ENDULZAMIENTOS DE AMOR"></a>
+            </div>
+            <p>Nosotros no soportamos el dolor de no estar con la persona con la que tenemos proyecciones de vida, 
+            no duermes, lloras, pides consejos, ruegas y no acepta ¡Te ayudaremos!</p>
           </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6 team">
-        <div class="thumbnail"> <img src="img/team/02.jpg" alt="..." class="team-img">
-          <div class="caption">
-            <h3>Mike Doe</h3>
-            <p>Web Designer</p>
+
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/amarres8.jpg" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>AMARRES Y ENDULZAMIENTOS DE AMOR</h4>
+                <div class="clearfix"></div>
+              </div>
+              <img src="img/amarres8.jpg" class="img-responsive" alt="AMARRES Y ENDULZAMIENTOS DE AMOR"></a>
+            </div>
+            <p>Nosotros no soportamos el dolor de no estar con la persona con la que tenemos proyecciones de vida, 
+            no duermes, lloras, pides consejos, ruegas y no acepta ¡Te ayudaremos!</p>
           </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6 team">
-        <div class="thumbnail"> <img src="img/team/03.jpg" alt="..." class="team-img">
-          <div class="caption">
-            <h3>Jane Doe</h3>
-            <p>Creative Director</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 team">
-        <div class="thumbnail"> <img src="img/team/04.jpg" alt="..." class="team-img">
-          <div class="caption">
-            <h3>Larry Show</h3>
-            <p>Project Manager</p>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
 </div>
 <!-- Contact Section -->
-<div id="contact-section">
+<div id="contact-section" style="background: rgb(49, 49, 47);">
   <div class="container">
     <div class="section-title center">
       <h2>Contact Us</h2>
@@ -337,20 +304,6 @@
     </div>
   </div>
 </div>
-<div id="social-section">
-  <div class="container">
-    <div class="social">
-      <ul>
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-      </ul>
-    </div>
-  </div>
-</div>
 <div id="footer">
   <div class="container">
     <p>Copyright &copy; Optics. Designed by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
@@ -365,7 +318,8 @@
 <script type="text/javascript" src="js/SmoothScroll.js"></script> 
 <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
 <script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script src="js/modal.js"></script>
 <script type="text/javascript" src="js/contact_me.js"></script> 
 
 <!-- Javascripts

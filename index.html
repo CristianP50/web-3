@@ -284,30 +284,30 @@
       <p><i class="fa fa-map-marker"></i>California<br>
         San Francisco</p>
       <div class="space"></div>
-      <p><i class="fa fa-envelope-o"></i>samelpedro12@gmail.com</p>
+      <p><i class="fa fa-envelope-o"></i>ms3703788@gmail.com</p>
       <div class="space"></div>
       <p><i class="fa fa-phone"></i>+16193564358</p>
     </div>
     <div class="col-md-8">
       <h4>¡Consulta gratis!</h4>
 
-      <form name="sentMessage" id="contactForm" novalidate>
+      <form name="sentMessage" id="contactForm" novalidate  action="mail/contact_me.php" method="post">
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Nombre" required="required">
+              <input type="text" id="name" name="nombre" class="form-control" placeholder="Nombre" required="required">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="number" id="tel" name="tel" class="form-control" placeholder="Teléfono" required="required">
+              <input type="number" id="tel" name="phone" class="form-control" placeholder="Teléfono" required="required">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Correo Electrónico" required="required">
+              <input type="email" id="email" name="email" class="form-control" placeholder="Correo Electrónico" required="required">
               <p class="help-block text-danger"></p>
             </div>
           </div>

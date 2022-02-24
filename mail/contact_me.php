@@ -1,26 +1,27 @@
-<?php
-// Check for empty fields
-if(empty($_POST['name'])  		||
-   empty($_POST['email']) 		||
-   empty($_POST['message'])	||
-   empty($_POST['tel'])	||
-   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
-   {
-	echo "No arguments Provided!";
-	return false;
-   }
-	
-$name = $_POST['name'];
-$email_address = $_POST['email'];
-$message = $_POST['message'];
-$tel = $_POST['tel'];
-	
-// Create the email and send the message
-$to = 'ms3703788@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "Website Contact Form:  $name";
-$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nMessage:\n$message\n\nTelefono:\n$tel";
-$headers = "From: ms3703788@gmail.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";	
-mail($to,$email_subject,$email_body,$headers);
-return true;			
-?>
+<?php 
+
+$nombre = $_POST['nombre'];
+$mail = $_POST['email'];
+$telefono = $_POST['phone'];
+$empresa = $_POST['message'];
+
+$header = 'from: '.$mail."\r\n";
+$header .= "X-Mailer:PHP/".phpversion()."\r\n";
+$header .= "Mime-Version:1.0 \r\n";
+$header .= "content-Type:text/plain";
+
+$message = "Este mensaje fue enviado por: ".$nombre."\r\n";
+$message .= "Su e-mail es: ".$mail."\r\n";
+$message .= "Telefono: ".$telefono."\r\n";
+$message .= "mensaje: ".$empresa."\r\n";
+$message .= "enviado el: ".date('d/m/Y',time());
+
+
+$para = 'ms3703788@gmail.com';
+$asunto = 'Mensaje de mi web';
+
+if(mail($para,$asunto,utf8_decode($message),$header))
+echo "<script type='text/javascript'>alert('Tu message ha sido enviado exitosamente');</script>";
+echo "<script type='text/javascript'>window.location.href='http://regresosdelamor.com/';</script>";
+
+ ?>

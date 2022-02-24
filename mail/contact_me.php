@@ -2,7 +2,7 @@
 
 $nombre = $_POST['nombre'];
 $mail = $_POST['email'];
-$telefono = $_POST['phone'];
+$telefono = $_POST['tel'];
 $empresa = $_POST['message'];
 
 $header = 'from: '.$mail."\r\n";

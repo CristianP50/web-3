@@ -17,7 +17,7 @@ $message .= "mensaje: ".$empresa."\r\n";
 $message .= "enviado el: ".date('d/m/Y',time());
 
 
-$para = 'ms3703788@gmail.com';
+$para = 'maelantonio39@gmail.com';
 $asunto = 'Mensaje de mi web';
 
 if(mail($para,$asunto,utf8_decode($message),$header))
